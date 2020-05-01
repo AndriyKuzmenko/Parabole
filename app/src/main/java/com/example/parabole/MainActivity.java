@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity
         etB=(EditText)findViewById(R.id.editText2);
         etC=(EditText)findViewById(R.id.editText3);
         wv=(WebView)findViewById(R.id.myWebView);
+
+        wv.getSettings().setJavaScriptEnabled(true);
     }
 
     public void buttonPressed(View view)
