@@ -125,5 +125,5 @@
                 android:layout_weight="10" />
         </LinearLayout>
 
-    </LinearLayout>
+</LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity
         wv=(WebView)findViewById(R.id.myWebView);
 
         wv.getSettings().setJavaScriptEnabled(true);
-        wv.setWebViewClient(new myWV);
+        wv.setWebViewClient(new myWV());
     }
 
     public void buttonPressed(View view)
@@ -48,13 +48,13 @@ public class MainActivity extends AppCompatActivity
             return;
         }
 
-        String equation="y="+s1+"x^2+"+s2+"x+"+s3;
-        wv.loadUrl("https://www.google.com");
+        String equation="https://www.google.com/search?q="+s1+"x%5E2%2B5x%2B5&oq=2x%5E2%2B"+s2+"%2B"+s3+"&aqs=chrome.0.69i59j0l7.3454j0j9&sourceid=chrome&ie=UTF-8";
+        wv.loadUrl(equation);
     }
 
     private class myWV extends WebViewClient
     {
-        public boolean shouldOverideUrlloading(WebView view, String url)
+        public boolean shouldOverideUrlLoading(WebView view, String url)
         {
             view.loadUrl(url);
             return true;
