@@ -43,5 +43,8 @@ public class MainActivity extends AppCompatActivity
             Toast.makeText(getApplicationContext(), "A can't be equal to 0!!!!!!!!!!!!!!!", Toast.LENGTH_LONG).show();
             return;
         }
+
+        String equation="y="+s1+"x^2+"+s2+"x+"+s3;
+
     }
 }
