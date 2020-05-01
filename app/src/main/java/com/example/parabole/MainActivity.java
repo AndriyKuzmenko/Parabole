@@ -47,6 +47,6 @@ public class MainActivity extends AppCompatActivity
         }
 
         String equation="y="+s1+"x^2+"+s2+"x+"+s3;
-
+        wv.loadUrl("https://www.google.com");
     }
 }
