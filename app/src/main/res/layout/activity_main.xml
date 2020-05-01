@@ -12,9 +12,10 @@
         android:orientation="vertical">
 
         <WebView
+            android:id="@+id/myWebView"
             android:layout_width="match_parent"
             android:layout_height="0px"
-            android:layout_weight="70" >
+            android:layout_weight="70">
 
         </WebView>
 
