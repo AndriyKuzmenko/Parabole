@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -27,6 +28,20 @@ public class MainActivity extends AppCompatActivity
 
     public void buttonPressed(View view)
     {
+        String s1=etA.getText().toString();
+        String s2=etB.getText().toString();
+        String s3=etC.getText().toString();
 
+        if (s1==null || s2==null || s3==null || s1.equals("") || s2.equals("") || s3.equals(""))
+        {
+            Toast.makeText(getApplicationContext(), "Enter all the numbers!!!!", Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        if (Double.valueOf(s1).doubleValue()==0)
+        {
+            Toast.makeText(getApplicationContext(), "A can't be equal to 0!!!!!!!!!!!!!!!", Toast.LENGTH_LONG).show();
+            return;
+        }
     }
 }
