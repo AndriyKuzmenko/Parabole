@@ -117,7 +117,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="30"
                 android:onClick="buttonPressed"
-                android:text="Button" />
+                android:text="Draw Plot" />
 
             <Space
                 android:layout_width="0px"
