@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity
         wv=(WebView)findViewById(R.id.myWebView);
 
         wv.getSettings().setJavaScriptEnabled(true);
+        wv.setWebViewClient(new myWV);
     }
 
     public void buttonPressed(View view)
@@ -48,5 +50,14 @@ public class MainActivity extends AppCompatActivity
 
         String equation="y="+s1+"x^2+"+s2+"x+"+s3;
         wv.loadUrl("https://www.google.com");
+    }
+
+    private class myWV extends WebViewClient
+    {
+        public boolean shouldOverideUrlloading(WebView view, String url)
+        {
+            view.loadUrl(url);
+            return true;
+        }
     }
 }
