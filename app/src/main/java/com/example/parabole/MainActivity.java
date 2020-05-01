@@ -48,7 +48,33 @@ public class MainActivity extends AppCompatActivity
             return;
         }
 
-        String equation="https://www.google.com/search?q="+s1+"x%5E2%2B5x%2B5&oq=2x%5E2%2B"+s2+"%2B"+s3+"&aqs=chrome.0.69i59j0l7.3454j0j9&sourceid=chrome&ie=UTF-8";
+        double a=Double.valueOf(s1).doubleValue();
+        double b=Double.valueOf(s2).doubleValue();
+        double c=Double.valueOf(s3).doubleValue();
+
+        String equation="https://www.google.com/search?q=";
+        if (a!=0 && a!=1 && b!=0 && b!=1 && c!=0 && c!=1)
+        {
+            equation = "https://www.google.com/search?q=" + s1 + "x%5E2%2B" + s2 + "x%2B" + s3 + "&aqs=chrome.0.69i59j0l7.3454j0j9&sourceid=chrome&ie=UTF-8";
+            wv.loadUrl(equation);
+        }
+
+        if (a!=1)
+        {
+            equation+=s1;
+        }
+        equation+="x%5E2%2B";
+
+        if (b==1)
+        {
+            equation+="x%5E2%2B";
+        }
+        else if (b!=0)
+        {
+            equation+=s2+"x%5E2%2B";
+        }
+
+        equation+=s3;
         wv.loadUrl(equation);
     }
 

@@ -44,7 +44,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="8"
                 android:ems="10"
-                android:inputType="number" />
+                android:inputType="numberSigned|number|numberDecimal" />
 
             <Space
                 android:layout_width="0px"
@@ -65,7 +65,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="8"
                 android:ems="10"
-                android:inputType="number" />
+                android:inputType="numberSigned|number|numberDecimal" />
 
             <Space
                 android:layout_width="0px"
@@ -86,7 +86,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="8"
                 android:ems="10"
-                android:inputType="number" />
+                android:inputType="numberSigned|number|numberDecimal" />
 
             <Space
                 android:layout_width="0px"
