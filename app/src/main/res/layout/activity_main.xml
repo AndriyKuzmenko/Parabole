@@ -1,129 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <WebView
+        android:id="@+id/myWebView"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="70">
+
+    </WebView>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <WebView
-            android:id="@+id/myWebView"
-            android:layout_width="match_parent"
-            android:layout_height="0px"
-            android:layout_weight="70">
-
-        </WebView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0px"
-            android:layout_weight="10"
-            android:orientation="horizontal">
-
-            <Space
-                android:layout_width="0px"
-                android:layout_height="match_parent"
-                android:layout_weight="5" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="0px"
-                android:layout_height="match_parent"
-                android:layout_weight="4"
-                android:fontFamily="serif"
-                android:text="a=" />
-
-            <EditText
-                android:id="@+id/editText"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="8"
-                android:ems="10"
-                android:inputType="numberSigned|number|numberDecimal" />
-
-            <Space
-                android:layout_width="0px"
-                android:layout_height="match_parent"
-                android:layout_weight="5" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="0px"
-                android:layout_height="match_parent"
-                android:layout_weight="4"
-                android:fontFamily="serif"
-                android:text="b=" />
-
-            <EditText
-                android:id="@+id/editText2"
-                android:layout_width="0px"
-                android:layout_height="match_parent"
-                android:layout_weight="8"
-                android:ems="10"
-                android:inputType="numberSigned|number|numberDecimal" />
-
-            <Space
-                android:layout_width="0px"
-                android:layout_height="match_parent"
-                android:layout_weight="5" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="0px"
-                android:layout_height="match_parent"
-                android:layout_weight="4"
-                android:fontFamily="serif"
-                android:text="c=" />
-
-            <EditText
-                android:id="@+id/editText3"
-                android:layout_width="0px"
-                android:layout_height="match_parent"
-                android:layout_weight="8"
-                android:ems="10"
-                android:inputType="numberSigned|number|numberDecimal" />
-
-            <Space
-                android:layout_width="0px"
-                android:layout_height="match_parent"
-                android:layout_weight="5" />
-
-        </LinearLayout>
+        android:layout_height="0px"
+        android:layout_weight="10"
+        android:orientation="horizontal">
 
         <Space
-            android:layout_width="match_parent"
-            android:layout_height="0px"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
             android:layout_weight="5" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0px"
-            android:layout_weight="10"
-            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:fontFamily="serif"
+            android:text="a=" />
 
-            <Space
-                android:layout_width="0px"
-                android:layout_height="match_parent"
-                android:layout_weight="10" />
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:ems="10"
+            android:inputType="numberSigned|number|numberDecimal" />
 
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="0px"
-                android:layout_height="match_parent"
-                android:layout_weight="30"
-                android:onClick="buttonPressed"
-                android:text="Draw Plot" />
+        <Space
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
 
-            <Space
-                android:layout_width="0px"
-                android:layout_height="match_parent"
-                android:layout_weight="10" />
-        </LinearLayout>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:fontFamily="serif"
+            android:text="b=" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:ems="10"
+            android:inputType="numberSigned|number|numberDecimal" />
+
+        <Space
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:fontFamily="serif"
+            android:text="c=" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:ems="10"
+            android:inputType="numberSigned|number|numberDecimal" />
+
+        <Space
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:onClick="buttonPressed"
+            android:text="Draw Plot" />
+
+        <Space
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+    </LinearLayout>
 
 </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
