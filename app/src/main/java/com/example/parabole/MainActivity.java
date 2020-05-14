@@ -67,11 +67,11 @@ public class MainActivity extends AppCompatActivity
 
         if (b==1)
         {
-            equation+="x%5E2%2B";
+            equation+="x%2B";
         }
         else if (b!=0)
         {
-            equation+=s2+"x%5E2%2B";
+            equation+=s2+"x%2B";
         }
 
         equation+=s3;
