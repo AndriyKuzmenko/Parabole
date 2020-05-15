@@ -21,10 +21,10 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        etA=(EditText)findViewById(R.id.editText);
-        etB=(EditText)findViewById(R.id.editText2);
-        etC=(EditText)findViewById(R.id.editText3);
-        wv=(WebView)findViewById(R.id.myWebView);
+        etA=(EditText)findViewById(R.id.etA);
+        etB=(EditText)findViewById(R.id.etB);
+        etC=(EditText)findViewById(R.id.etC);
+        wv=(WebView)findViewById(R.id.wv);
 
         wv.getSettings().setJavaScriptEnabled(true);
         wv.setWebViewClient(new myWV());
