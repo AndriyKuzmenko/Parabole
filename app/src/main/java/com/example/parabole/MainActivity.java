@@ -10,9 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
 {
-    EditText etA;
-    EditText etB;
-    EditText etC;
+    EditText etA, etB, etC;
     WebView wv;
 
     @Override
@@ -55,7 +53,7 @@ public class MainActivity extends AppCompatActivity
         String equation="https://www.google.com/search?q=";
         if (a!=0 && a!=1 && b!=0 && b!=1 && c!=0 && c!=1)
         {
-            equation = "https://www.google.com/search?q=" + aString + "x%5E2%2B" + bString + "x%2B" + cString + "&aqs=chrome.0.69i59j0l7.3454j0j9&sourceid=chrome&ie=UTF-8";
+            equation+=aString + "x%5E2%2B" + bString + "x%2B" + cString + "&aqs=chrome.0.69i59j0l7.3454j0j9&sourceid=chrome&ie=UTF-8";
             wv.loadUrl(equation);
         }
 
